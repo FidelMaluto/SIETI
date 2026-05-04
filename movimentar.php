@@ -1,7 +1,7 @@
 <?php
 include("config/db.php");
 include("config/auth.php");
-proteger();
+// proteger();
 
 $id = $_GET["id"] ?? null;
 if (!$id) {

@@ -1,7 +1,7 @@
 <?php
 include("config/db.php");
 include("config/auth.php");
-proteger();
+// proteger();
 
 $total = $conn->query("SELECT COUNT(*) as n FROM equipamentos")->fetch_assoc()["n"];
 $estoque = $conn->query("SELECT COUNT(*) as n FROM equipamentos WHERE status='estoque'")->fetch_assoc()["n"];
