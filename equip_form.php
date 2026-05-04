@@ -1,7 +1,7 @@
 <?php
 include("config/db.php");
 include("config/auth.php");
-proteger();
+// proteger();
 
 $id = $_GET["id"] ?? null;
 $editando = false;
@@ -86,7 +86,138 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
   <meta charset="utf-8">
   <title><?= $editando ? "Editar" : "Cadastrar" ?> Equipamento</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <!-- <link rel="stylesheet" href="assets/style.css"> -->
+   <style>
+    /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #0f1f5f;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* TITLE */
+.card h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+/* LINK */
+.card a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* FORM */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* FULL WIDTH */
+form textarea,
+form button {
+  grid-column: span 2;
+}
+
+/* INPUTS */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #cbd5f5;
+}
+
+/* FOCUS */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #3b82f6;
+  background: rgba(255,255,255,0.08);
+}
+
+/* TEXTAREA */
+textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* SELECT */
+select {
+  cursor: pointer;
+}
+
+/* BUTTON */
+button {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59,130,246,0.4);
+}
+
+/* ERROR */
+p[style] {
+  background: rgba(251, 113, 133, 0.1);
+  border: 1px solid #fb7185;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+   </style>
 </head>
 <body>
 <div class="container">
