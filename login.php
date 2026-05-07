@@ -31,12 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $erro = "Usuário ou senha inválidos.";
 }
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Login - Inventário TI</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="login-body">
 

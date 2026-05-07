@@ -39,10 +39,15 @@ $res = $stmt->get_result();
 <head>
   <meta charset="utf-8">
   <title>Equipamentos - Inventário TI</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
 <body>
+
+<button class="menu-toggle" id="menuToggle">
+  ☰
+</button>
 
 <div class="sidebar">
   <h2>Inventário TI</h2>

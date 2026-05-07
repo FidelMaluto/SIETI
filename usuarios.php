@@ -24,14 +24,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios ORDER BY id DESC");
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Usuários - Inventário TI</title>
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
+
+<button class="menu-toggle" id="menuToggle">
+  ☰
+</button>
+
 <div class="container">
 
   <!-- HEADER -->

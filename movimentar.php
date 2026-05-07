@@ -46,14 +46,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   exit;
 }
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Movimentar Equipamento</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
+
+<button class="menu-toggle" id="menuToggle">
+  ☰
+</button>
+  
 <div class="container">
 
   <div class="card">
