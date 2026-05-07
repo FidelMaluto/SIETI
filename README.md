@@ -32,3 +32,5 @@ Requisitos Não Funcionais
     RNF05 Manutenibilidade
     RNF06 Portabilidade
     RNF07 Escalabilidade
+
+Dev: FIDEL DOMINGOS MALUTO
