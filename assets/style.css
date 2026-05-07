@@ -1,11 +1,11 @@
-/* ================= RESET ================= */
+/*  RESET  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ================= BODY ================= */
+/*  BODY  */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #0f172a;
@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-/* ================= SIDEBAR ================= */
+/*  SIDEBAR  */
 .sidebar {
   width: 220px;
   background: #111827;
@@ -55,7 +55,7 @@ body {
   box-shadow: 0 5px 15px rgba(124, 92, 255, .3);
 }
 
-/* ================= MAIN ================= */
+/*  MAIN  */
 .main {
   margin-left: 220px;
   padding: 30px;
@@ -63,7 +63,7 @@ body {
   max-width: 1400px;
 }
 
-/* ================= TOPBAR ================= */
+/*  TOPBAR  */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -80,7 +80,7 @@ body {
   opacity: 0.8;
 }
 
-/* ================= CARDS ================= */
+/*  CARDS  */
 .card {
   margin: 20px 0;
   background: #1e293b;
@@ -95,14 +95,14 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
 }
 
-/* ================= GRID ================= */
+/*  GRID  */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
-/* ================= STAT ================= */
+/*  STAT  */
 .stat-card {
   background: linear-gradient(135deg, #7c5cff, #5a3df0);
   padding: 20px;
@@ -119,100 +119,7 @@ body {
   opacity: .8;
 }
 
-/* ================= FORM ================= */
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 14px;
-  border-radius: 10px;
-  border: 1px solid #334155;
-  background: #0b1220;
-  color: white;
-  transition: all 0.25s ease;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #94a3b8;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: #7c5cff;
-  box-shadow: 0 0 0 2px rgba(124, 92, 255, .25);
-}
-
-textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-/* ================= BUTTON ================= */
-button {
-  padding: 11px 18px;
-  border-radius: 10px;
-  border: none;
-  background: linear-gradient(135deg, #7c5cff, #5a3df0);
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(124, 92, 255, .35);
-}
-
-/* ================= TABLE ================= */
-.table-container {
-  overflow-x: auto;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-  background: #1e293b;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-thead {
-  background: #111827;
-}
-
-th {
-  padding: 14px;
-  font-size: 13px;
-  text-transform: uppercase;
-  opacity: .8;
-}
-
-td {
-  padding: 13px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-tbody tr {
-  transition: 0.2s;
-}
-
-tbody tr:hover {
-  background: rgba(124, 92, 255, .08);
-}
-
-/* ================= BADGES ================= */
+/*  BADGES  */
 .badge {
   padding: 5px 10px;
   border-radius: 20px;
@@ -253,7 +160,7 @@ tbody tr:hover {
   background: #3b82f6;
 }
 
-/* ================= STATUS TEXT ================= */
+/*  STATUS TEXT  */
 .status-estoque {
   color: #22c55e;
   font-weight: bold;
@@ -274,7 +181,7 @@ tbody tr:hover {
   font-weight: bold;
 }
 
-/* ================= FILTER ================= */
+/*  FILTER  */
 .filter-form {
   display: flex;
   gap: 10px;
@@ -282,13 +189,7 @@ tbody tr:hover {
   align-items: center;
 }
 
-.filter-form input,
-.filter-form select {
-  flex: 1;
-  min-width: 180px;
-}
-
-/* ================= BUTTONS EXTRA ================= */
+/*  BUTTONS EXTRA  */
 .btn-add {
   background: #22c55e;
   padding: 10px 14px;
@@ -323,7 +224,7 @@ tbody tr:hover {
   background: #ef4444;
 }
 
-/* ================= LOGIN ================= */
+/*  LOGIN  */
 .login-body {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   height: 100vh;
@@ -340,16 +241,7 @@ tbody tr:hover {
   text-align: center;
 }
 
-.input-group {
-  display: flex;
-  align-items: center;
-  background: #0b1220;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  padding: 8px 12px;
-}
-
-/* ================= ALERT ================= */
+/*  ALERT  */
 .alert-error {
   background: rgba(239, 68, 68, .15);
   border: 1px solid #ef4444;
@@ -359,7 +251,7 @@ tbody tr:hover {
   color: #f87171;
 }
 
-/* ================= RESPONSIVO ================= */
+/*  RESPONSIVO  */
 @media (max-width: 900px) {
 
   .sidebar {
@@ -383,10 +275,6 @@ tbody tr:hover {
   }
 
   .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .form-grid {
     grid-template-columns: 1fr;
   }
 }
