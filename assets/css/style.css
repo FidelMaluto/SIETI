@@ -251,14 +251,33 @@ body {
   color: #f87171;
 }
 
-/*  MENU MOBILE  */
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* BUTTON */
+button {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-  .main {
-    padding: 25px;
-  }
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+
+/*  MENU MOBILE  */
+.grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main {
+  padding: 25px;
+}
 
 
 /*  TABLETS  */
