@@ -13,6 +13,7 @@ $baix = $conn->query("SELECT COUNT(*) as n FROM equipamentos WHERE status='baixa
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard - Inventário TI</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/script.js" defer></script>

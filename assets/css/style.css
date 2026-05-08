@@ -270,13 +270,42 @@ button:hover {
 }
 
 
-/*  MENU MOBILE  */
-.grid {
-  grid-template-columns: repeat(2, 1fr);
+
+/* MENU HAMBURGUER */
+.menu-toggle {
+  display: none;
+
+  position: fixed;
+  top: 15px;
+  left: 15px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #7c5cff;
+  color: white;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  z-index: 2000;
+
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+
+  transition: 0.3s;
 }
 
-.main {
-  padding: 25px;
+.menu-toggle:hover {
+  transform: scale(1.05);
+  background: #6948ff;
 }
 
 
@@ -320,14 +349,33 @@ button:hover {
 }
 
 /*  TELEFONES  */
+/* TELEFONES */
 @media (max-width: 600px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
   .main {
-    padding: 75px 15px 15px;
+    margin-left: 0;
+    width: 100%;
+    padding: 80px 15px 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .card {
-    padding: 18px;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   .topbar h1 {
@@ -340,5 +388,12 @@ button:hover {
 
   .sidebar {
     width: 240px;
+  }
+
+  .menu-toggle {
+    top: 12px;
+    left: 12px;
+    width: 42px;
+    height: 42px;
   }
 }
