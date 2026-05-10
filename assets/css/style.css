@@ -300,6 +300,47 @@ body {
   text-align: center;
 }
 
+.login-card p {
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.input-group:hover {
+  border-color: #3b82f6;
+}
+
+.input-group span {
+  font-size: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.input-group input::placeholder {
+  color: #94a3b8;
+}
+
+.login button {
+  width: 100%;
+}
+
 /*  ALERT  */
 .alert-error {
   background: rgba(239, 68, 68, .15);
