@@ -53,7 +53,7 @@ $res = $conn->query("
     <div class="table-header">
       <input type="text" id="searchInput" class="busca" placeholder="🔍 Pesquisar movimentação...">
     </div>
-
+        <br>
     <div class="table-container">
       <table id="historicoTable">
         <thead>
