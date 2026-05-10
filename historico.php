@@ -51,7 +51,7 @@ $res = $conn->query("
   <div class="card">
 
     <div class="table-header">
-      <input type="text" id="searchInput" placeholder="🔍 Pesquisar movimentação...">
+      <input type="text" id="searchInput" class="busca" placeholder="🔍 Pesquisar movimentação...">
     </div>
 
     <div class="table-container">

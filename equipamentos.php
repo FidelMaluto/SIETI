@@ -40,7 +40,7 @@ $res = $stmt->get_result();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Equipamentos - Inventário TI</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <script src="assets/js/script.js" defer></script>
 </head>
 <body>
@@ -79,13 +79,12 @@ $res = $stmt->get_result();
     <form method="GET" class="filter-form">
 
       <input 
-        name="busca" 
+        name="busca" class= "busca"
         placeholder="🔍 Buscar por nome, serial, patrimônio..."
-        value="<?= htmlspecialchars($busca) ?>"
-      >
+        value="<?= htmlspecialchars($busca) ?>">
 
-      <select name="status">
-        <option value="">-- Todos os status --</option>
+      <select name="status" class="status">
+        <option value="">- Todos os status - </option>
         <option value="estoque" <?= $status=="estoque"?"selected":"" ?>>Estoque</option>
         <option value="em_uso" <?= $status=="em_uso"?"selected":"" ?>>Em uso</option>
         <option value="manutencao" <?= $status=="manutencao"?"selected":"" ?>>Manutenção</option>
