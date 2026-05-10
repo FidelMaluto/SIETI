@@ -92,9 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 </head>
 <body>
-  <button class="menu-toggle" id="menuToggle">
-    ☰
-  </button>
+  
 <div class="container">
 
   <div class="card">

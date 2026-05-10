@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       </div>
     <?php endif; ?>
 
-    <form method="POST">
+    <form method="POST" class="login">
 
       <div class="input-group">
         <span>👤</span>
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <span>🔒</span>
         <input name="senha" type="password" placeholder="Senha" required>
       </div>
-
+          
       <button type="submit" class="btn-login">
         Entrar
       </button>
