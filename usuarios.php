@@ -30,7 +30,7 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Usuários - Inventário TI</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/script.js" defer></script>
 </head>
 <body>
