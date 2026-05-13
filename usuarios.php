@@ -30,7 +30,7 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Usuários - Inventário TI</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style02.css">
   <script src="assets/js/script.js" defer></script>
 </head>
 <body>
@@ -54,7 +54,7 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
   </div>
 
   <!-- FORMULÁRIO -->
-  <div class="card">
+  <div class="card" style="display: none;">
     <h2>➕ Cadastrar novo usuário</h2>
 
     <?php if($erro): ?>
@@ -78,7 +78,7 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
   </div>
 
   <!-- LISTA -->
-  <div class="card">
+  <div class="card" style="display:none;">
     <h2>📋 Lista de usuários</h2>
 
     <div class="table-container">
