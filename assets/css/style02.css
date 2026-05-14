@@ -201,23 +201,23 @@
 
     .menu-toggle {
         display: none;
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  width: 45px;
-  height: 45px;
-  border: none;
-  border-radius: 10px;
-  background: #2563eb;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 2000;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,.3);
-  transition: 0.3s;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        background: #2563eb;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 2000;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+        transition: 0.3s;
     }
 
     /* TABELA */

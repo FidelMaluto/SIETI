@@ -1,7 +1,7 @@
 <?php
 include("config/db.php");
 include("config/auth.php");
-// protegerAdmin();
+protegerAdmin();
 
 $erro = "";
 

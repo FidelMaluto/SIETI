@@ -1,7 +1,7 @@
 <?php
 include("config/db.php");
 include("config/auth.php");
-// proteger();
+proteger();
 
 $res = $conn->query("
   SELECT m.id, e.nome, e.patrimonio, m.tipo_mov, m.responsavel, m.observacao, m.data_mov
