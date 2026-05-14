@@ -3,8 +3,9 @@ Sistema de Inventário de Equipamentos de TI (SIETI)
 Sistema Inteligente de Gestão de TI
 <img width="1334" height="574" alt="sietiDsh" src="https://github.com/user-attachments/assets/46ec646b-2431-4dcd-87dc-33d897028f8b" />
 
-De volta com o projeto.
-<img width="1316" height="597" alt="sieti01" src="https://github.com/user-attachments/assets/b8749572-bd4f-42a4-994d-9d7ff62668e2" />
+Tela de login
+<img width="1335" height="586" alt="sietiLgn" src="https://github.com/user-attachments/assets/5fb47648-c4ad-4fdf-996b-bc436434a19b" />
+
 
 O SIETI é um sistema que possibilita fazer o controle de materias informátiocos, dando segurança as empresas que os gerem.
 É um sistema destinado ao resgisto, controlo, monitorização e atualização de ativos tecnológicos...
