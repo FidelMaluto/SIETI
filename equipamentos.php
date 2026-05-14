@@ -1,7 +1,7 @@
 <?php
 include("config/db.php");
 include("config/auth.php");
-// proteger();
+proteger();
 
 $busca = $_GET["busca"] ?? "";
 $status = $_GET["status"] ?? "";
