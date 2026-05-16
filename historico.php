@@ -55,7 +55,7 @@ $res = $conn->query("
     </div>
         <br>
     <div class="table-container">
-      <table id="historicoTable">
+      <table id="filtrando">
         <thead>
           <tr>
             <th>ID</th>

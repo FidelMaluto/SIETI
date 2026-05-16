@@ -85,13 +85,12 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
   <!-- CARD TABELA -->
   <div class="card">
 
-    <h1>📋 Lista de usuários</h1>
-
     <div class="table-header">
+      <h1>📋 Lista de usuários</h1>
       <input type="text" id="searchInput" class="busca" placeholder="🔍 Pesquisar movimentação...">
     </div><br>
 
-    <div class="table-container">
+    <div class="table-container" id = "filtrando">
 
       <table>
 
