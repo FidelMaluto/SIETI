@@ -209,7 +209,7 @@ body {
   background: #111827;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .table-container table {
@@ -389,7 +389,7 @@ button:hover {
   z-index: 2000;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
   transition: 0.3s;
 }
 
