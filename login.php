@@ -65,9 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input name="senha" type="password" placeholder="Senha" required>
       </div>
 
-      <button type="submit" class="btn-login">
-        Entrar
-      </button>
+      <button type="submit" class="btn-login">Entrar</button>
 
     </form>
 

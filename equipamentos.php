@@ -130,13 +130,9 @@ $res = $stmt->get_result();
             <td><?= htmlspecialchars($e["localizacao"]) ?></td>
             <td class="acoes">
 
-              <a href="equip_form.php?id=<?= $e["id"] ?>" class="btn-edit">
-                ✏️
-              </a>
+              <a href="equip_form.php?id=<?= $e["id"] ?>" class="btn-edit">✏️</a>
 
-              <a href="movimentar.php?id=<?= $e["id"] ?>" class="btn-move">
-                🔁
-              </a>
+              <a href="movimentar.php?id=<?= $e["id"] ?>" class="btn-move">🔁</a>
 
               <?php if(isAdmin()): ?>
                 <a href="equip_exclui.php?id=<?= $e["id"] ?>"

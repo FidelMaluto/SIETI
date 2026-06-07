@@ -49,27 +49,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
   try {
     if ($editando) {
-      $stmt = $conn->prepare("
-        UPDATE equipamentos SET
-          nome=?, tipo=?, marca=?, modelo=?, serial=?, patrimonio=?, status=?,
-          localizacao=?, responsavel=?, contato=?, observacao=?
-        WHERE id=?
-      ");
+      $stmt = $conn->prepare("UPDATE equipamentos SET nome=?, tipo=?, marca=?, modelo=?, serial=?, patrimonio=?, status=?,
+          localizacao=?, responsavel=?, contato=?, observacao=? WHERE id=? ");
+
       $stmt->bind_param("sssssssssssi",
-        $nome,$tipo,$marca,$modelo,$serial,$patrimonio,$status,
-        $localizacao,$responsavel,$contato,$observacao,$id
-      );
+        $nome,$tipo,$marca,$modelo,$serial,$patrimonio,$status, $localizacao,$responsavel,$contato,$observacao,$id);
+
       $stmt->execute();
     } else {
-      $stmt = $conn->prepare("
-        INSERT INTO equipamentos
-          (nome,tipo,marca,modelo,serial,patrimonio,status,localizacao,responsavel,contato,observacao)
-        VALUES (?,?,?,?,?,?,?,?,?,?,?)
+      $stmt = $conn->prepare(" INSERT INTO equipamentos
+          (nome,tipo,marca,modelo,serial,patrimonio,status,localizacao,responsavel,contato,observacao) VALUES (?,?,?,?,?,?,?,?,?,?,?)
       ");
+      
       $stmt->bind_param("sssssssssss",
-        $nome,$tipo,$marca,$modelo,$serial,$patrimonio,$status,
-        $localizacao,$responsavel,$contato,$observacao
-      );
+        $nome,$tipo,$marca,$modelo,$serial,$patrimonio,$status, $localizacao,$responsavel,$contato,$observacao);
       $stmt->execute();
     }
 
