@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios ORDER BY id DESC");
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
@@ -102,9 +102,9 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
         </tbody>
       </table>
     </div>
-
   </div>
-
 </div>
+
 </body>
+
 </html>

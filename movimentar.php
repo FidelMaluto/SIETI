@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
   // regra simples:
   // emprestimo -> status em_uso
-  // devolucao -> status estoque
+  // devolução -> status estoque
   $novo_status = ($tipo_mov === "emprestimo") ? "em_uso" : "estoque";
 
   $stmt = $conn->prepare("UPDATE equipamentos SET status=?, responsavel=? WHERE id=?");
@@ -36,9 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $stmt->execute();
 
   $stmt = $conn->prepare("
-    INSERT INTO movimentacoes (equipamento_id, tipo_mov, responsavel, observacao)
-    VALUES (?, ?, ?, ?)
+    INSERT INTO movimentacoes (equipamento_id, tipo_mov, responsavel, observacao) VALUES (?, ?, ?, ?)
   ");
+
   $stmt->bind_param("isss", $id, $tipo_mov, $responsavel, $observacao);
   $stmt->execute();
 
@@ -46,13 +46,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   exit;
 }
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Movimentar Equipamento</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
 <div class="container">
 
@@ -81,7 +82,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       <button type="submit">Registrar</button>
     </form>
   </div>
-
 </div>
+
 </body>
+
 </html>
