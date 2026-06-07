@@ -28,27 +28,33 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Usuários - Inventário TI</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style02.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-<div class="container">
+<button class="menu-toggle" id="menuToggle">
+  ☰
+</button>
 
-  <!-- HEADER -->
-  <div class="sidebar">
-    <h1>👥 Usuários (Admin)</h1>
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>👥 Usuários</h2>
 
-    <div class="nav-links">
-      <a href="index.php">🏠 Dashboard</a>
-      <a href="equipamentos.php">💻 Equipamentos</a>
-      <a href="historico.php">📋 Histórico</a>
-      <a href="logout.php" class="logout">🚪 Sair</a>
-    </div>
-  </div>
+  <a href="index.php">🏠 Dashboard</a>
+  <a href="equipamentos.php">💻 Equipamentos</a>
+  <a href="historico.php">📋 Histórico</a>
+  <a href="logout.php">🚪 Sair</a>
+</div>
 
-  <!-- FORMULÁRIO -->
+<!-- MAIN -->
+<div class="main">
+
+  <!-- CARD FORM -->
   <div class="card">
-    <h2>➕ Cadastrar novo usuário</h2>
+
+    <h1>➕ Cadastrar novo usuário</h1>
 
     <?php if($erro): ?>
       <div class="alert-error">
@@ -56,9 +62,12 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
       </div>
     <?php endif; ?>
 
-    <form method="POST" class="user-form">
+    <form method="POST">
+
       <input name="nome" placeholder="Nome completo" required>
-      <input name="usuario" placeholder="Usuário (login)" required>
+
+      <input name="usuario" placeholder="Usuário" required>
+
       <input name="senha" type="password" placeholder="Senha" required>
 
       <select name="role">
@@ -66,16 +75,25 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
         <option value="admin">Admin</option>
       </select>
 
-      <button type="submit">Criar usuário</button>
+      <button type="submit">
+        Criar usuário
+      </button>
+
     </form>
   </div>
 
-  <!-- LISTA -->
+  <!-- CARD TABELA -->
   <div class="card">
-    <h2>📋 Lista de usuários</h2>
 
-    <div class="table-container">
+    <div class="table-header">
+      <h1>📋 Lista de usuários</h1>
+      <input type="text" id="searchInput" class="busca" placeholder="🔍 Pesquisar movimentação...">
+    </div><br>
+
+    <div class="table-container" id = "filtrando">
+
       <table>
+
         <thead>
           <tr>
             <th>ID</th>
@@ -85,22 +103,35 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
             <th>Criado em</th>
           </tr>
         </thead>
+
         <tbody>
+
           <?php while($u = $res->fetch_assoc()): ?>
-            <tr>
-              <td><?= $u["id"] ?></td>
-              <td><?= htmlspecialchars($u["nome"]) ?></td>
-              <td><?= htmlspecialchars($u["usuario"]) ?></td>
-              <td>
-                <span class="badge <?= $u["role"] ?>">
-                  <?= $u["role"] ?>
-                </span>
-              </td>
-              <td><?= date("d/m/Y H:i", strtotime($u["created_at"])) ?></td>
-            </tr>
+
+          <tr>
+            <td><?= $u["id"] ?></td>
+
+            <td><?= htmlspecialchars($u["nome"]) ?></td>
+
+            <td><?= htmlspecialchars($u["usuario"]) ?></td>
+
+            <td>
+              <span class="badge <?= $u["role"] ?>">
+                <?= $u["role"] ?>
+              </span>
+            </td>
+
+            <td>
+              <?= date("d/m/Y H:i", strtotime($u["created_at"])) ?>
+            </td>
+          </tr>
+
           <?php endwhile; ?>
+
         </tbody>
+
       </table>
+
     </div>
   </div>
 </div>

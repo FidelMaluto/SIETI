@@ -14,10 +14,17 @@ $res = $conn->query("
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Histórico - Inventário TI</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
+
+<button class="menu-toggle" id="menuToggle">
+  ☰
+</button>
+
 <div class="sidebar">
   <h2>Inventário TI</h2>
 
@@ -44,11 +51,11 @@ $res = $conn->query("
   <div class="card">
 
     <div class="table-header">
-      <input type="text" id="searchInput" placeholder="🔍 Pesquisar movimentação...">
+      <input type="text" id="searchInput" class="busca" placeholder="🔍 Pesquisar movimentação...">
     </div>
-
+        <br>
     <div class="table-container">
-      <table id="historicoTable">
+      <table id="filtrando">
         <thead>
           <tr>
             <th>ID</th>

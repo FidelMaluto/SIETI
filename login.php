@@ -31,12 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $erro = "Usuário ou senha inválidos.";
 }
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Login - Inventário TI</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="login-body">
 
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       </div>
     <?php endif; ?>
 
-    <form method="POST">
+    <form method="POST" class="login">
 
       <div class="input-group">
         <span>👤</span>
@@ -64,8 +64,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <span>🔒</span>
         <input name="senha" type="password" placeholder="Senha" required>
       </div>
+<<<<<<< HEAD
 
       <button type="submit" class="btn-login">Entrar</button>
+=======
+          
+      <button type="submit" class="btn-login">
+        Entrar
+      </button>
+>>>>>>> 55d595ecdca5247a821dd9e47cfdd43488e6a359
 
     </form>
 

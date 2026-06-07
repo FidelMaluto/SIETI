@@ -1,0 +1,346 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    /* BODY */
+    body {
+        background: #0f172a;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #e5e7eb;
+    }
+
+    /* Menu lateral */
+    .sidebar {
+        width: 220px;
+        background: #111827;
+        height: 100vh;
+        padding: 25px 15px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .sidebar h2 {
+        margin-bottom: 25px;
+        color: #7c5cff;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .sidebar a {
+        display: block;
+        padding: 12px;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        color: #cbd5e1;
+        text-decoration: none;
+        transition: all 0.25s ease;
+    }
+
+    .sidebar a:hover {
+        background: rgba(124, 92, 255, 0.15);
+        color: white;
+    }
+
+    .sidebar a.active {
+        background: #7c5cff;
+        color: white;
+        box-shadow: 0 5px 15px rgba(124, 92, 255, .3);
+    }
+
+    .main {
+        margin-left: 220px;
+        padding: 30px;
+        width: calc(100% - 220px);
+    }
+
+    /*  TOPBAR  */
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .topbar h1 {
+        font-size: 22px;
+    }
+
+    .topbar .user {
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    /* CONTAINER */
+    .container {
+        width: 100%;
+        max-width: 900px;
+        padding: 20px;
+    }
+
+
+    /* CARD */
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* TITLE */
+    .card h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    /* LINK */
+    .card a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #2563eb;
+    }
+
+    .card a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(50, 98, 175, 0.233);
+    }
+
+    /* FORM */
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    /* FULL WIDTH */
+    form textarea,
+    form button {
+        grid-column: span 2;
+    }
+
+    /* INPUTS */
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.05);
+        color: #fff;
+        font-size: 14px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    option {
+        color: #0f172a;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #cbd5f5;
+    }
+
+    /* FOCUS */
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #3b82f6;
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* TEXTAREA */
+    textarea {
+        min-height: 100px;
+        resize: none;
+    }
+
+    /* SELECT */
+    select {
+        cursor: pointer;
+    }
+
+    /* BUTTON */
+    button {
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        border: none;
+        padding: 14px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    /* ERROR */
+    p[style] {
+        background: rgba(251, 113, 133, 0.1);
+        border: 1px solid #fb7185;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .menu-toggle {
+        display: none;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        background: #2563eb;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 2000;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+        transition: 0.3s;
+    }
+
+    .table-header {
+        justify-content: space-between;
+    }
+
+    .table-header input {
+        width: 50%;
+        padding: 14px;
+        border: none;
+    }
+
+    /* TABELA */
+    .table-container {
+        width: 100%;
+        border-collapse: collapse;
+        background: #111827;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .table-container table {
+        width: 100%;
+    }
+
+    .table-container thead {
+        background: #1e293b;
+    }
+
+    .table-container thead th {
+        padding: 16px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 600;
+        color: #f8fafc;
+        border-bottom: 1px solid #334155;
+    }
+
+    .table-container tbody tr {
+        transition: 0.3s;
+    }
+
+    .table-container tbody tr:nth-child(even) {
+        background: #0f172a;
+    }
+
+    .table-container tbody tr:hover {
+        background: #1e293b;
+    }
+
+    .table-container tbody td {
+        padding: 14px 16px;
+        color: #cbd5e1;
+        border-bottom: 1px solid #1e293b;
+        font-size: 14px;
+    }
+
+    /*  TABLETS  */
+    @media (max-width: 900px) {
+
+        body {
+            display: block;
+        }
+
+        .menu-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar {
+            transform: translateX(-100%);
+            z-index: 1500;
+        }
+
+        .sidebar.active {
+            transform: translateX(0);
+        }
+
+        .main {
+            margin-left: 0;
+            width: 100%;
+            padding: 80px 20px 20px;
+        }
+
+        .topbar {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /*  TELEFONES  */
+    @media (max-width: 600px) {
+
+        .main {
+            padding: 75px 15px 15px;
+        }
+
+        .card {
+            padding: 18px;
+        }
+
+        .topbar h1 {
+            font-size: 18px;
+        }
+
+        .stat-card h2 {
+            font-size: 22px;
+        }
+
+        .sidebar {
+            width: 240px;
+        }
+    }
