@@ -283,27 +283,7 @@ body {
   background: #ef4444;
 }
 
-<<<<<<< HEAD:assets/style.css
-.badge.estoque {
-  background: #22c55e;
-}
-
-.badge.em_uso {
-  background: #3b82f6;
-}
-
-.badge.manutencao {
-  background: #f59e0b;
-}
-
-.badge.baixado {
-  background: #ef4444;
-}
-
-/* Login */
-=======
 /*  LOGIN  */
->>>>>>> 55d595ecdca5247a821dd9e47cfdd43488e6a359:assets/css/style.css
 .login-body {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   height: 100vh;
@@ -477,7 +457,6 @@ button:hover {
     gap: 15px;
   }
 
-<<<<<<< HEAD:assets/style.css
 /* ALERTA */
 .alert-error {
   background: rgba(239, 68, 68, .15);
@@ -487,7 +466,7 @@ button:hover {
   margin-bottom: 15px;
   color: #f87171;
 }
-=======
+
   .card {
     padding: 16px;
     border-radius: 12px;
@@ -518,4 +497,3 @@ button:hover {
     height: 42px;
   }
 }
->>>>>>> 55d595ecdca5247a821dd9e47cfdd43488e6a359:assets/css/style.css

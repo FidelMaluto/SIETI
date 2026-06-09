@@ -64,25 +64,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <span>🔒</span>
         <input name="senha" type="password" placeholder="Senha" required>
       </div>
-<<<<<<< HEAD
 
       <button type="submit" class="btn-login">Entrar</button>
-=======
           
-      <button type="submit" class="btn-login">
-        Entrar
-      </button>
->>>>>>> 55d595ecdca5247a821dd9e47cfdd43488e6a359
+      <button type="submit" class="btn-login">Entrar</button>
 
     </form>
 
-    <p class="login-info">
-      ⚠️Tens uma conta?
-    </p>
+    <p class="login-info">⚠️Tens uma conta?</p>
 
   </div>
-
 </div>
 
 </body>
+
 </html>
