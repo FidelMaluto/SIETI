@@ -66,8 +66,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       </div>
 
       <button type="submit" class="btn-login">Entrar</button>
-          
-      <button type="submit" class="btn-login">Entrar</button>
 
     </form>
 
