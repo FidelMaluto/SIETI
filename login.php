@@ -44,8 +44,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
   <div class="login-card">
 
-    <h1>🔐 Inventário TI</h1>
-    <p class="subtitle">Acesse o sistema</p>
+    <h1>Inventário TI</h1>
+
+    <p class="subtitle">Acesse o sistema</p><br>
 
     <?php if($erro): ?>
       <div class="alert-error">
@@ -68,8 +69,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       <button type="submit" class="btn-login">Entrar</button>
 
     </form>
-
-    <p class="login-info">⚠️Tens uma conta?</p>
 
   </div>
 </div>
