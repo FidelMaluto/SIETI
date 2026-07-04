@@ -42,10 +42,10 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
 <div class="sidebar">
   <h2>👥 Usuários</h2>
 
-  <a href="index.php">🏠 Dashboard</a>
-  <a href="equipamentos.php">💻 Equipamentos</a>
-  <a href="historico.php">📋 Histórico</a>
-  <a href="logout.php">🚪 Sair</a>
+  <a href="index.php">Dashboard</a>
+  <a href="equipamentos.php">Equipamentos</a>
+  <a href="historico.php">Histórico</a>
+  <a href="logout.php">Sair</a>
 </div>
 
 <!-- MAIN -->
@@ -54,7 +54,7 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
   <!-- CARD FORM -->
   <div class="card">
 
-    <h1>➕ Cadastrar novo usuário</h1>
+    <h1>Cadastrar novo usuário</h1>
 
     <?php if($erro): ?>
       <div class="alert-error">
@@ -86,8 +86,8 @@ $res = $conn->query("SELECT id, nome, usuario, role, created_at FROM usuarios OR
   <div class="card">
 
     <div class="table-header">
-      <h1>📋 Lista de usuários</h1>
-      <input type="text" id="searchInput" class="busca" placeholder="🔍 Pesquisar movimentação...">
+      <h1>Lista de usuários</h1>
+      <input type="text" id="searchInput" class="busca" placeholder="Pesquisar movimentação...">
     </div><br>
 
     <div class="table-container" id = "filtrando">

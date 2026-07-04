@@ -28,15 +28,15 @@ $baix = $conn->query("SELECT COUNT(*) as n FROM equipamentos WHERE status='baixa
 <div class="sidebar">
   <h2>Inventário TI</h2>
 
-  <a href="index.php">🏠 Dashboard</a>
-  <a href="equipamentos.php">💻 Equipamentos</a>
-  <a href="historico.php">📋 Histórico</a>
+  <a href="index.php">Dashboard</a>
+  <a href="equipamentos.php">Equipamentos</a>
+  <a href="historico.php">Histórico</a>
 
   <?php if(isAdmin()): ?>
-    <a href="usuarios.php">👥 Usuários</a>
+    <a href="usuarios.php">Usuários</a>
   <?php endif; ?>
 
-  <a href="logout.php">🚪 Sair</a>
+  <a href="logout.php">Sair</a>
 </div>
 
 <div class="main">

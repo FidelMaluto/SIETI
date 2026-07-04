@@ -53,15 +53,15 @@ $res = $stmt->get_result();
 <div class="sidebar">
   <h2>Inventário TI</h2>
 
-  <a href="index.php">🏠 Dashboard</a>
-  <a href="equipamentos.php" class="active">💻 Equipamentos</a>
-  <a href="historico.php">📋 Histórico</a>
+  <a href="index.php">Dashboard</a>
+  <a href="equipamentos.php" class="active">Equipamentos</a>
+  <a href="historico.php">Histórico</a>
 
   <?php if(isAdmin()): ?>
-    <a href="usuarios.php">👥 Usuários</a>
+    <a href="usuarios.php">Usuários</a>
   <?php endif; ?>
 
-  <a href="logout.php">🚪 Sair</a>
+  <a href="logout.php">Sair</a>
 </div>
 
 <div class="main">
@@ -80,7 +80,7 @@ $res = $stmt->get_result();
 
       <input 
         name="busca" class= "busca"
-        placeholder="🔍 Buscar por nome, serial, patrimônio..."
+        placeholder="Buscar por nome, serial, patrimônio..."
         value="<?= htmlspecialchars($busca) ?>">
 
       <select name="status" class="status">
@@ -94,7 +94,7 @@ $res = $stmt->get_result();
       <button type="submit">Filtrar</button>
 
       <a href="equip_form.php" class="btn-add">
-        ➕ Novo equipamento
+        Novo equipamento
       </a>
 
     </form>
